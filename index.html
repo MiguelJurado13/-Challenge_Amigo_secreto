@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sorteo</title>
+</head>
+<body>
+
+    <main class="main-content">
+        <header class="header-banner">
+            <h1 class="main-title">Sorteo</h1>
+            <img src="assets/amigo-secreto.png" alt="Amigo Secreto">
+        </header>
+
+        <section class="input-section">
+            <h2 class="section-title">Inserte el nombre de los participantes</h2>
+            <div class="input-wrapper">
+                <input type="text" id="participante" class="input-name" placeholder="Escribe Un Nombre">
+                <button class="button-add" onclick="agregarParticipante()">Añadir</button>
+            </div>
+
+            <ul id="listParticipants" class="name-list" aria-labelledby="ListaParticipants" role="List">
+                <!-- Agregado de app.js -->
+            </ul>
+
+            <ul id="result" class="result-list" aria-live="polite">
+                    <!-- Listado de sortearparticipante en app.js -->
+            </ul>
+
+            <div class="button-container">
+                <button class="button-draw" onclick="sortearParticipante()" aria-label="Sortear Participante">
+                    <img src="assets/play_circle_outline.png" alt="Icono de Sortear">
+                    Sortear Participante 
+                </button>
+            </div>
+        </section>
+    </main>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
